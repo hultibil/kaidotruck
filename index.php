@@ -18,7 +18,7 @@
             <img class="logo" src="image/kaidologo.jpg">
             <h2>Trang chủ giới thiệu Kaido</h2>
             <div class="nut0chon">
-                <a href="index.html" onclick="clickSound()">Trang chủ</a>
+                <a href="index.php" onclick="clickSound()">Trang chủ</a>
             </div>
             <div class="nut1"> <!--Add CSS-->
                 <a href="khac.html" onclick="clickSound()">Dự án khác</a>
@@ -27,7 +27,7 @@
                 <a href="hoithem.html" onclick="clickSound()">Trò chuyện</a>
             </div>
             <div class="nut4">
-                <a href="tienich.html" onclick="clickSound()">Tính năng</a>
+                <a href="tienich.php" onclick="clickSound()">Tính năng</a>
             </div>
             <div class="nut3">
                 <a href="gamemini.html" onclick="clickSound()">Game mini</a>
