@@ -21,7 +21,7 @@
                 <a href="index.php" onclick="clickSound()">Trang chủ</a>
             </div>
             <div class="nut1"> <!--Add CSS-->
-                <a href="khac.html" onclick="clickSound()">Dự án khác</a>
+                <a href="khac.php" onclick="clickSound()">Dự án khác</a>
             </div>
             <div class="nut2">
                 <a href="hoithem.html" onclick="clickSound()">Trò chuyện</a>
