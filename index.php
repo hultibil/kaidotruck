@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ giới thiệu Kaido</title>
     <link rel="icon" href="image/kaidoLogomini.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--TRANG LOADING-->

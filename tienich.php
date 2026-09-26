@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ giới thiệu Kaido</title>
     <link rel="icon" href="image/kaidoLogomini.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--TRANG LOADING-->
@@ -16,7 +16,7 @@
     <div id="dautrang"> 
     <div class="header"> <!--Add CSS-->
             <img class="logo" src="image/kaidologo.jpg">
-            <h2>Trang chủ giới thiệu Kaido</h2>
+            <h2>Tính năng</h2>
             <div class="nut0">
                 <a href="index.php" onclick="clickSound()">Trang chủ</a>
             </div>
@@ -33,7 +33,28 @@
                 <a href="gamemini.html" onclick="clickSound()">Game mini</a>
             </div>
     </div>
-    <h2 class="text">Chưa có tính năng nào !!</h2>
+    <h3 class="text">Những tính năng hữu ích và mua sắm!</h3>
+<div class="tienich-grid">
+    <div class="tienich-card">
+        <h3><a href="taikhoan.php">Tài khoản của bạn</a></h3>
+        <p>Thông tin tài khoản của bạn</p>
+    </div>
+
+    <div class="tienich-card">
+        <h3>Kaido Shop</h3>
+        <p>Xem và tìm kiếm sản phẩm</p>
+    </div>
+
+    <div class="tienich-card">
+        <h3>Giỏ hàng</h3>
+        <p>Quản lý các sản phẩm đã chọn</p>
+    </div>
+
+    <div class="tienich-card">
+        <h3>Đơn hàng</h3>
+        <p>Theo dõi các đơn hàng</p>
+    </div>
+</div>
 <div id="info">
     <div class="thongtinweb">
     <h4 class="text">Bạn đang ở cuối trang.</h4>

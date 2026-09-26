@@ -11,5 +11,3 @@ Rất mong mọi người ghe thăm trang web của chúng mình. :3
 *********
 xx--KAIDO - The powerful mini engine--xx
 ------RC xx  DIY  xx  STEM------
-
-**Cách kết nối Git**

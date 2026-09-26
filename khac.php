@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>Dự án khác</title>
     <link rel="icon" href="image/kaidoLogomini.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--TRANG LOADING-->

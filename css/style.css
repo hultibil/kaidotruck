@@ -11,6 +11,7 @@
      8. MỤC LỤC NHANH (.gioithieu)
      9. TIÊU ĐỀ SECTION (.chuyen, .text)
     10. THẺ GIỚI THIỆU XE (.xe, .thoisokhai, .thoimoi, .hiendai, .hientai, .hino, .xediahinh, .xetaiv5, .xetaiv6)
+    10.1 NÚT BẤM CHO TÍNH NĂNG (TIENICH.HTML)
     11. ẢNH MẶC ĐỊNH
     12. SLIDER ẢNH
     13. MỤC QUẢNG CÁO (.ads)
@@ -449,6 +450,45 @@ body {
     border-radius: 10px;
 }
 
+/* ==================== 10.1 NÚT BẤM CHO TÍNH NĂNG (TIENICH.HTML) ==================== */
+
+/* GRID CARD CHO TÍNH NĂNG*/ /*2x2*/
+.tienich-grid {
+    display: grid; /* Khúc này quan trọng này */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.tienich-card {
+    background: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    padding: 25px;
+    min-height: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+/* Hiệu ứng khi rê chuột vào card */
+.tienich-card:hover {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: translateY(-5px);
+}
+
+/* Link Tài khoản */
+.tienich-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tienich-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.tienich-card:hover {
+    transform: translateY(-5px);
+}
 
 /* ==================== 11. ẢNH MẶC ĐỊNH ==================== */
 img {
