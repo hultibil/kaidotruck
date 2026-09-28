@@ -41,12 +41,14 @@
     </div>
 
     <div class="tienich-card">
-        <h3>Kaido Shop</h3>
+        <h3>
+            <a href="shop.php">Kaido Shop</a>
+        </h3>
         <p>Xem và tìm kiếm sản phẩm</p>
     </div>
 
     <div class="tienich-card">
-        <h3>Giỏ hàng</h3>
+        <h3></h3>
         <p>Quản lý các sản phẩm đã chọn</p>
     </div>
 
