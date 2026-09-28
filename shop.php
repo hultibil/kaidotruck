@@ -108,9 +108,40 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <title>Kaido Shop</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/shop.css">
 </head>
 <body>
+
+
+<!--TRANG LOADING-->
+    <div id="loading">
+        <img src="image/imgload.png">
+        <p>Đang tải, gần xong rồi!!<span id="dots">...</span></p>
+    </div>
+
+
+
+<div class="header"> <!--Add CSS-->
+            <img class="logo" src="image/kaidologo.jpg">
+            <h2>Cửa hàng Kaido</h2>
+            <div class="nut0">
+                <a href="index.php" onclick="clickSound()">Trang chủ</a>
+            </div>
+            <div class="nut1"> <!--Add CSS-->
+                <a href="khac.php" onclick="clickSound()">Dự án khác</a>
+            </div>
+            <div class="nut2">
+                <a href="hoithem.html" onclick="clickSound()">Trò chuyện</a>
+            </div>
+            <div class="nut4chon">
+                <a href="shop.php" onclick="clickSound()">Tính năng</a>
+            </div>
+            <div class="nut3">
+                <a href="gamemini.html" onclick="clickSound()">Game mini</a>
+            </div>
+    </div>
+
+
     <h1>Kaido Shop</h1>
 
 
@@ -199,5 +230,15 @@ $result = $stmt->get_result();
 </div>
         <?php endwhile; ?>
     </div>
+    <!--Đặt Cho loading-->
+<script>
+window.addEventListener("load", function() {
+    const loading = document.getElementById("loading");
+    loading.style.opacity = "0";
+    setTimeout(function() {
+        loading.style.display = "none";
+    }, 500);
+});
+</script>
 </body>
 </html>

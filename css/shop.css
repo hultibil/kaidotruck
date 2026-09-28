@@ -1,0 +1,403 @@
+/* ============================================================
+   SHOP.CSS - Giao diện cửa hàng Kaido
+   Phong cách đồng bộ với style.css (Theme tối #111827 & Gradients)
+   ============================================================ */
+
+/* Import font dùng chung giống trang chủ */
+@import url('fonts.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 130px 20px 40px 20px;
+    background: #111827;
+    color: #ffffff;
+    font-family: 'HarmonyOS Sans', sans-serif;
+    margin: 0;
+}
+
+/* ==================== 0. Điều hướng (H1) ==================== */
+
+
+.header {
+    position: fixed; /* Đặt vị trí cố định để header luôn hiển thị trên cùng */
+    z-index: 1000;   /* Đảm bảo header nằm trên các phần tử khác */
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(to right, rgb(111, 111, 111), rgb(167, 167, 167));
+}
+.header h2 {
+    color: black;
+    font-size: 20px;
+}
+
+/* --- Nút "Trang chủ" (nut0) --- */
+.nut0 {
+    margin-left: auto;
+    display: flex;
+    transition: all 0.3s ease;
+}
+.nut0 a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nut0:hover a {
+    background: linear-gradient(to right, #000000, #808080);
+    transform: translateY(-2px);
+}
+
+/* --- nut0 khi đang là trang hiện tại --- */
+.nut0chon {
+    margin-left: auto;
+    display: flex;
+    transition: all 0.3s ease;
+}
+.nut0chon a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    background: linear-gradient(to right, #000000, #808080);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nut0chon:hover a {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: translateY(-2px);
+}
+
+/* --- Nút "Dự án khác" (nut1) --- */
+.nut1 {
+    display: flex;
+    transition: all 0.3s ease;
+}
+.nut1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nut1:hover a {
+    background: linear-gradient(to right, #000000, #808080);
+    transform: translateY(-2px);
+}
+
+/* --- nut1 khi đang là trang hiện tại --- */
+.nut1chon {
+    display: flex;
+    transition: all 0.3s ease;
+}
+.nut1chon a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    background: linear-gradient(to right, #000000, #808080);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nut1chon:hover a {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: translateY(-2px);
+}
+
+/* --- Nút "Trò chuyện" / "Game mini" / "Tính năng" (nut2, nut3, nut4) --- */
+.nut2, .nut3, .nut4 {
+    display: flex;
+    transition: all 0.3s ease;
+}
+.nut2 a, .nut3 a, .nut4 a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nut2:hover a, .nut3:hover a, .nut4:hover a {
+    background: linear-gradient(to right, #000000, #808080);
+    transform: translateY(-2px);
+}
+
+/* --- nut2 khi đang là trang hiện tại --- */
+.nut2chon {
+    display: flex;
+    transition: all 0.3s ease;
+}
+.nut2chon a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    background: linear-gradient(to right, #000000, #808080);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nut2chon:hover a {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: translateY(-2px);
+}
+
+/* --- nut4 khi đang là trang hiện tại --- */
+.nut4chon {
+    display: flex;
+    transition: all 0.3s ease;
+}
+.nut4chon a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    background: linear-gradient(to right, #000000, #808080);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nut4chon:hover a {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: translateY(-2px);
+}
+/* ==================== 0.1 LOGO ==================== */
+.logo {
+    text-align: center;
+    width: 100px;
+    height: 60px;
+}
+
+/* ==================== 0.2 LOADING SCREEN ==================== */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+#loading img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    animation: logoLoading 1.0s ease-in-out infinite;
+}
+#loading p {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+@keyframes logoLoading {
+    0%   { transform: scale(1.0); opacity: 0.7; }
+    50%  { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1.0); opacity: 0.7; }
+}
+
+/* ==================== 1. TIÊU ĐỀ SHOP (H1) ==================== */
+h1 {
+    background: linear-gradient(90deg, silver, white, black, silver);
+    background-size: 400% 400%;
+    animation: RGB 10s linear infinite;
+    color: silver;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+
+@keyframes RGB {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ==================== 2. MÔ ĐỦN PHÂN LOẠI (.categories) ==================== */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.categories a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 8px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.categories a:hover {
+    background: linear-gradient(to right, #000000, #808080);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ==================== 3. CÁC FORM TÌM KIẾM & LỌC GIÁ ==================== */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #4d4c4c;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #ff416c;
+    box-shadow: 0 0 8px rgba(255, 65, 108, 0.5);
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #000000, #808080);
+    transform: translateY(-2px);
+}
+
+/* ==================== 4. DANH SÁCH SẢN PHẨM (.shop-list) ==================== */
+.shop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ==================== 5. THẺ SẢN PHẨM (.product-card) ==================== */
+.product-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 65, 108, 0.25);
+    border-color: rgba(255, 65, 108, 0.4);
+}
+
+.product-card h2 {
+    color: #00c6ff;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #d1d5db;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.product-card p strong {
+    color: #ff416c;
+    font-size: 16px;
+}
+
+.product-card a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.product-card a:hover {
+    background: linear-gradient(to right, #000000, #808080);
+}
+
+/* ==================== 6. RESPONSIVE / MOBILE ==================== */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+        padding: 15px;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .shop-list {
+        grid-template-columns: 1fr;
+    }
+}

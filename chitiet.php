@@ -26,8 +26,7 @@ if (!$product) {
     <title>
         <?php echo htmlspecialchars($product['name']); ?> - Kaido Shop
     </title>
-
-    <link rel="stylesheet" href=""> ////////////
+    <link rel="stylesheet" href="css/chitiet.css">
 </head>
 
 <body>
